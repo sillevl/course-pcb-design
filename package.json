@@ -1,0 +1,37 @@
+{
+  "name": "course-pcb-design",
+  "version": "1.0.0",
+  "description": "Course materials for PCB Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "lint-markdown": "markdownlint **/*.md",
+    "lint": "npm run lint-markdown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sillevl/course-pcb-design.git"
+  },
+  "author": "Sille Van Landschoot <info@sillevl.be>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sillevl/course-pcb-design/issues"
+  },
+  "homepage": "https://github.com/sillevl/course-pcb-design#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-markdown"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.8",
+    "markdownlint-cli": "^0.26.0",
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-container": "^2.1.5",
+    "vuepress-plugin-presentation-mode": "^0.1.1",
+    "vuepress-plugin-public-files": "^1.0.0-alpha.0",
+    "vuepress-plugin-zooming": "^1.1.8"
+  }
+}
